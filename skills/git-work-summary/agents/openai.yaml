@@ -1,0 +1,4 @@
+interface:
+  display_name: "コミットから作業報告"
+  short_description: "今日のGitコミットと差分を確認し、日本語の箇条書きで日報を作成"
+  default_prompt: "$git-work-summary 今日のコミット履歴と変更内容を確認して、natural-japaneseを使い、作業内容を箇条書きにまとめてください。"
