@@ -6,7 +6,7 @@ Gitのコミット履歴と差分を確認し、`natural-japanese` で読みや�
 
 - Codexなど、`SKILL.md` 形式のスキルを利用できるエージェント
 - Git 2.37以降、Python 3.10以降
-- **別途導入した `natural-japanese` スキル**。このリポジトリには同梱していません。導入済みの人からスキルフォルダ全体を受け取るか、そのスキルの提供元から入手してください。提供元URLは未確認のため記載していません。
+- **別途導入した [natural-japanese](https://github.com/coji/natural-japanese) スキル**。このリポジトリには同梱していません。提供元のREADMEに従って導入してください。
 - natural-japaneseのlintには、その版が指定する依存パッケージと実行環境。PEP 723形式の依存宣言がある版では `uv run` を利用できます。使えない場合は同スキルの手動チェックリストで確認します。
 
 Gitの履歴収集スクリプトにはPython標準ライブラリ以外の依存はありません。Windows・macOS・Linuxで使える構成です。動作確認はWindowsで行っています。
@@ -21,6 +21,14 @@ Gitの履歴収集スクリプトにはPython標準ライブラリ以外の依�
 | 特定のプロジェクトで共有する | `<project>/.agents/skills/git-work-summary/` |
 
 `~` は利用者自身のホームフォルダです。`CODEX_HOME`を使う環境では、その環境が指定するスキルの探索先に配置してください。`natural-japanese` も、同じエージェントから見つかる探索先に配置します。このリポジトリ直下をcloneしただけでは、スキルが自動で登録されるとは限りません。導入後は新しいセッションで呼び出します。
+
+natural-japaneseは、提供元が案内する次のコマンドで導入できます。画面の案内に従い、利用するエージェントとインストール先を選んでください。
+
+```text
+npx skills add coji/natural-japanese
+```
+
+手動で導入する場合は、[natural-japaneseのReleases](https://github.com/coji/natural-japanese/releases) から配布ファイルを取得できます。
 
 ## 使い方
 
